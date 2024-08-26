@@ -1,11 +1,11 @@
 public class App {
     public static void main(String[] args) throws Exception {
         Implementadora implementadora = new Implementadora();
-        implementadora.metodoDaInterface1();
+        implementadora.metodoDaInterface1(1);
         implementadora.metodoDaInterface2();
 
         Interface1 implementadoraInterface1 = new Implementadora();
-        implementadoraInterface1.metodoDaInterface1();        
+        implementadoraInterface1.metodoDaInterface1(1);        
         // A linha abaixo gera um erro de compilação
         //implementadoraInterface1.metodoDaInterface2();
 
@@ -15,6 +15,7 @@ public class App {
         //implementadoraInterface2.metodoDaInterface1();
 
         implementadora.metodoDaClassePai(123);
+        System.out.println(Implementadora.COR);
 
     }
 }
