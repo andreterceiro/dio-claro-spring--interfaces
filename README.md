@@ -13,3 +13,11 @@ Atenção:
 - O método de uma interface pode ser `public, abstract, default, static`. Não pode ser `private` ou `protected`;
 - Na herança, o que eu não posso é reduzir a visibilidade de um método, não posso trocar o tipo de retorno;
 - Quanto aos parâmetros, na herança eu posso mudar o tipo de um parâmetro, mas ao usar interfaces não.
+
+Veja [neste link](https://stackoverflow.com/a/7311293/8792303) a questão das propiedades nas interfaces. Elas podem existir, mas segundo o link:
+
+```
+Variables can be defined in interfaces, but they do not behave as might be expected: they are treated as final static
+```
+
+Veja que na `Interface1` eu criei uma propriedade (`public final static`).
